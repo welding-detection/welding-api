@@ -1,0 +1,13 @@
+<form action="/upload/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="login_id">Login ID:</label>
+    <input type="text" name="login_id" required>
+    <br>
+    <label for="file_name">File Name:</label>
+    <input type="text" name="file_name" required>
+    <br>
+    <label for="file_url">File URL:</label>
+    <input type="file" name="file_url" required>
+    <br>
+    <input type="submit" value="Upload">
+</form
